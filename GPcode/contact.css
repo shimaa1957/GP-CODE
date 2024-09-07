@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto' , sans-serif;
+   
+}
+body { 
+    background-image: url(foto/grayBackg.jpg);
+    background-repeat: no-repeat; 
+    background-size: cover;
+    background-position: center center;
+}
+.cont{
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.navbar{
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+nav{
+flex: 1;
+text-align: right;
+}
+nav,#list,.item{
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav,#list,.item,a{
+    text-decoration: none;
+    color: rgb(45, 44, 44);
+    font-size: 15px;
+}
+.navbar a:hover {
+    border-bottom: 3px solid rgba(0, 0, 0, 0.503);
+  }
+  
+  .navbar a.active {
+    border-bottom: 3px solid  rgba(0, 0, 0, 0.503);
+  }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+.contact
+{
+ position:relative;
+ min-height: 100vh;
+ padding: 50px 100px;
+ display:flex;
+ justify-content: center;
+ align-items:center ;
+ text-align: left;
+ flex-direction: column;
+ background: url(contact.jpeg);
+ background-size:cover ;
+}
+.contact.content{
+    max-width: 800px;
+    text-align: center;
+}
+ h2{
+    text-align: center;
+    color: rgb(60, 57, 57);
+    font-size: 30px;
+    line-height: 30px;
+    font-family: Arial Bold; 
+}
+.contact.content P{
+    font-weight: 300;
+    color: #fff;
+}
+.container{
+    width:100% ;
+    display: flex;
+    justify-content: left;
+    align-items: last baseline;
+    margin-top: 30px;
+}
+.container .contactInfo{
+    width:50%;
+    display:flex;
+    flex-direction:column;
+    justify-content: left;
+}
+.container .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.container .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #a4a0a0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #272727;
+    flex-direction:column;
+    font-weight: 300;
+}
+.container .contactInfo .box .text h3{
+    font-weight: 500;
+    color: #535555;
+    
+}
+.contactForm{
+    width:40%;
+    padding: 40px; 
+    text-align: center;
+     background: #585555;
+     margin-left: 120px;
+     margin-right: 10px;
+     margin-top: 10px;
+     margin-bottom: 10px;
+}
+.contactForm form{
+   width: 100%;
+    text-align: center;
+    padding: 25px 20px ;
+}
+.contactForm h2{
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 500;
+}
+.contactForm .inputBox{
+    position:relative;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+}
+.contactForm .inputBox input ,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px 0;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid#333;
+    outline: none;
+}
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+#btn{
+    width: 150px;
+    padding: 6px;
+    cursor: pointer;
+}
+.contactForm .inputBox input:focus~span,
+.contactForm .inputBox input:valid~span,
+.contactForm .inputBox textarea:focus~span,
+.contactForm .inputBox textarea:valid~span{
+    color:#e91e63;
+    font-size:12px;
+    transform:translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]{  
+    width: 100px;
+    background: #171717;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+@media(max-width:991px)
+{
+    .contact{  padding: 50px;}
+    .container{  flex-direction: column; }
+    .container .contactInfo { margin-bottom: 40px; }
+    .container .contactInfo{  width: 100%; }
+}
+
+
+
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');*/

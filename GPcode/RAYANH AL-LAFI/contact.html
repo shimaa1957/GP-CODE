@@ -1,0 +1,108 @@
+<!DOCTYPE html >
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CONTACT US</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width , initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" 
+integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="contact.css"/>
+</head>
+<body>
+    <div class="cont">
+        <div class="navbar">
+            <img src="foto/logo.GP-removebg-preview.png" class="logo" >
+            <nav>
+                <ul id="list">
+                    <li class="item"><a class="line" href="home.html">HOME</a></li>
+                    <li class="item"><a class="line" href="sign.html">LOGIN</a></li>
+                    <li class="item"><a class="line" href="ContactUs.html">CONTACT US</a></li>
+                </ul>
+            </nav>
+            <img src="foto/menu.png" class="menu-icon" >
+        </div>
+
+    <section class="contact">
+        <div class="content">
+             <h2>CONTACT US</h2>
+        </div>
+        <div class="container">
+            <div class="contactInfo">
+             <div class="box" >
+                <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i></div>
+                <div class="text" >
+                    <h3><i>Email:</i></h3><br>
+                    <p>PhotographerProject@gmail.com</p>
+                    </div> 
+             </div>
+             <div class="box" >
+                <div class="icon"></div>
+                <div class="text" >
+                    <h3><i>Common Question:</i></h3><br>
+                    <p>
+                        <ul><li>What is the benefit of the site?</li>
+                        <br> Easy access to photographers and communication with them.
+                        <br><br>
+                        <li>Is the site for reservations or for selling photos?</li>
+                        <br> No, just for show.
+                         <br><br>
+                        <li>How to book appointments for photo sessions?</li> 
+                       <br>By communicating with the chosen photographer via his personal e-mail.
+                     </ul></p>
+                    </div> 
+             </div></div>
+                    
+             <div class="contactForm">
+                <form  onsubmit="sendEmail(); reset(); return false;">
+                    <h2>You`r Review</h2>
+                    <div class="inputBox">
+                    <input type="text" name="" id="name" required="required" placeholder="Full Name"  autocomplete="off">
+                    
+                </div>
+                <div class="inputBox">
+                    <input type="text" name="" id="email" required="required" placeholder="Email"  autocomplete="off">
+                
+                </div>
+                <div class="inputBox">
+                    <input type="text" name="" id="subject" required="required" placeholder="Subject"  autocomplete="off">
+                
+                </div>
+                <div class="inputBox">
+                    <textarea required="required"  id="message" placeholder="Send your REVIWE..." ></textarea>  
+                </div>
+                <div class="inputBox">
+                    <button id="btn">SEND</button>
+                </div>
+                </form>
+             </div>
+            </div>
+               
+        </div> 
+     </div>
+    </section>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+      function sendEmail(){
+        Email.send({
+           Host : "smtp.gmail.com",
+          Username : "photography.website.projectg@gmail.com",
+           Password : "80A9092D9465ECE7F6D13B2B0B2A9F0C48E3",
+            To : 'photography.website.projectg@gmail.com',
+           From : document.getElementById("email").value,
+           Subject : "New contact ",
+            Body : "Name: "+ document.getElementById("name").value +
+                   "<br> Email: "+ document.getElementById("email").value
+                   +"<br> Subject:  "+ document.getElementById("subject").value
+                   +"<br> Message:  "+ document.getElementById("message").value
+         }).then(
+          message => alert("Message Sent Succesfully")
+            );
+      }
+    </script>
+</body>
+</html>
+
+
+
